@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Travel Planner</h1>
+        <div class="input-section">
+            <label for="start-city">Starting City or Country:</label>
+            <input type="text" id="start-city" placeholder="e.g., Tokyo" required>
+
+            <label for="num-stops">Number of Stops:</label>
+            <input type="number" id="num-stops" min="0" value="0" required>
+
+            <div id="stops-container"></div>
+
+            <label for="end-city">Destination City or Country:</label>
+            <input type="text" id="end-city" placeholder="e.g., London" required>
+
+            <button onclick="planTrip()">Plan Trip</button>
+        </div>
+        <div class="output-section">
+            <h2>Travel Plan</h2>
+            <pre id="output">Enter details and click "Plan Trip" to see your itinerary.</pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
